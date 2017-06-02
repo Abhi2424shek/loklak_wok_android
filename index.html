@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Loklak Wok Android</title>
+  <link rel="shortcut icon" href="/images/favicon.png"/>
+  <style>
+    * {
+       font-family: "Roboto", sans-serif;
+       margin: 0;
+       padding: 0;
+    }
+    .center {
+      text-align: center;
+    }
+    p {
+      font-weight: 200;
+    }
+    h1 {
+      font-weight: 400;
+    }
+    a {
+      text-decoration: none;
+    }
+    #main {
+      display: table-cell;
+      width: 100%;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .btn {
+      position: relative;
+      display: block;
+      margin: 30px auto;
+      padding: 0;
+      overflow: hidden;
+      border-width: 0;
+      outline: none;
+      border-radius: 2px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+      background-color: #2ecc71;
+      color: #ecf0f1;
+      transition: background-color .3s;
+      cursor: pointer;
+    }
+    .btn:hover, .btn:focus {
+      background-color: #27ae60;
+    }
+    .btn > * {
+      position: relative;
+    }
+    .btn span {
+      display: block;
+      padding: 12px 24px;
+    }
+    .btn:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      width: 0;
+      padding-top: 0;   
+      border-radius: 100%; 
+      background-color: rgba(236, 240, 241, .3);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+    .btn:active:before {
+      width: 120%;
+      padding-top: 120%;
+      transition: width .2s ease-out, padding-top .2s ease-out;
+    }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <img src="images/loklak.png" height="150px" width="150px"/><br><br>
+    <h1>Download loklak for Android</h1>
+    <a href="https://github.com/fossasia/loklak_wok_android/raw/apk/app-debug.apk"><button class="btn" type="button"><span>Download APK</span></button></a>
+    <p>Note: To install the downloaded apk, please enable "Allow installation from unknown sources" in settings.</p>
+  </div>
+</body>
+<script>
+// As table-cells cannot be given % values for width and height, setting the height and width via javascript
+document.getElementById("main").style.width = window.innerWidth + "px";
+document.getElementById("main").style.height = window.innerHeight + "px";
+</script>
+</html>
